@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Alexis">
+	<meta name="author" content="Admin">
+	<title>Alexis Webpage</title>
+
+	<link rel="icon" href="images/favicon.png">
+	<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700|Poppins:400,500,600" rel="stylesheet">
+	<link rel="stylesheet" href="css/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="css/styles.min.css">
+
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<header class="header">
+		<div class="header__menu">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-2">
+						<a href="/" class="logo">
+							<img src="images/logo.png" class="logo__img">
+						</a>
+					</div>
+					<div class="col-lg-9 col-lg-offset-1">
+						<ul class="menu">
+							<li class="menu__item"><a href="#about-us" class="menu__link menu__link--active">About Us</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">Our Focus</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">Portfolio</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">Our Team</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">Work Steps</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">Pricing</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">Testimonials</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">Blog</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">Contact</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header__info">
+			<div class="container">
+				<h1 class="header__title">We design things with love and passion.</h1>
+				<a href="#" class="button">Our Works</a>
+				<div class="row">
+					<div class="col-8 offset-2 header__advantages">
+						<div class="header__advantage-item header__advantage-item--green">
+							<i class="icon-dollar header__advantage-icon"></i>
+							<p class="header__advantage-text">Fixed price projects</p>
+						</div>
+						<div class="header__advantage-item header__advantage-item--violet">
+							<i class="icon-time header__advantage-icon"></i>
+							<p class="header__advantage-text">Receive on time</p>
+						</div>
+						<div class="header__advantage-item header__advantage-item--orange">
+							<i class="icon-check header__advantage-icon"></i>
+							<p class="header__advantage-text">Satisfaction guranteed</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section class="about" id="about-us">
+		<div class="container">
+			<div class="row">
+				<div class="col-6">
+					<div class="about__image-block">
+						<img class="about__image" src="http://via.placeholder.com/555x700/cbcbcb/928785">
+					</div>
+				</div>
+				<div class="col-7 about__info-wrapper">
+					<div class="about__info global-counter">
+						<div class="global-counter__wrapper">
+							<h2 class="title">About Us.</h2>
+							<p class="text">Analytics release series A financing launch party interaction design android angel investor. Vesting period social media sales conversion launch party rockstar incubator customer social proof graphical user interface technology supply chain. Non-disclosure agreement rockstar creative partner network launch party social proof paradigm shift long tail influencer. </p>
+							<p class="text">Monetization validation success. Seed round channels product management. Customer non-disclosure agreement strategy android growth hacking ramen buyer.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+<!-- LiveReload Script -->
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script>
+	$('a').click(function(){
+	    $('html, body').animate({
+	        scrollTop: $( $.attr(this, 'href') ).offset().top
+	    }, 600);
+	    return false;
+	});
+</script>
+</body>
+</html>

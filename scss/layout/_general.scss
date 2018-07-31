@@ -1,0 +1,86 @@
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	outline: none;
+	box-sizing: border-box;
+	transition: all .3s ease-in-out;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+html {
+	height: 100%;
+}
+
+body, html {
+	min-height: 100%;
+	width: 100%;
+}
+
+.clear::after, .clear::before {
+	content: " ";
+	display: table;
+}
+
+.clear::after {
+	clear: both;
+}
+
+body {
+	font: 15px $font-main;
+	counter-reset: numbers;
+}
+
+.button {
+	@include font(16px, $fw: 600);
+	padding: 15px 40px;
+	border-radius: 25px;
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+	display: inline-block;
+	background: $red;
+
+	&:hover {
+		background: #ff4729;
+	}
+}
+
+.global-counter {
+	position: relative;
+
+	&::before {
+		counter-increment: numbers;
+		content: counter(numbers, decimal-leading-zero);
+		color: #e0e0e0;
+		font: 700 274px/202px $font-main;
+		opacity: .3;
+		position: absolute;
+		z-index: 0;
+	}
+
+	&__wrapper {
+		position: relative;
+		z-index: 1;
+	}
+}
+
+.title {
+	font: 700 50px $font-title;
+	color: $dark-grey;
+	margin-bottom: 35px;
+}
+
+.text {
+	color: $grey;
+	line-height: 27px;
+	margin-bottom: 30px;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
