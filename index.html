@@ -28,7 +28,7 @@
 					<div class="col-lg-9 col-lg-offset-1">
 						<ul class="menu">
 							<li class="menu__item"><a href="#about-us" class="menu__link menu__link--active">About Us</a></li>
-							<li class="menu__item"><a href="#" class="menu__link">Our Focus</a></li>
+							<li class="menu__item"><a href="#focus" class="menu__link">Our Focus</a></li>
 							<li class="menu__item"><a href="#" class="menu__link">Portfolio</a></li>
 							<li class="menu__item"><a href="#" class="menu__link">Our Team</a></li>
 							<li class="menu__item"><a href="#" class="menu__link">Work Steps</a></li>
@@ -73,12 +73,52 @@
 					</div>
 				</div>
 				<div class="col-7 about__info-wrapper">
-					<div class="about__info global-counter">
+					<div class="about__info global-counter colored-border">
 						<div class="global-counter__wrapper">
 							<h2 class="title">About Us.</h2>
 							<p class="text">Analytics release series A financing launch party interaction design android angel investor. Vesting period social media sales conversion launch party rockstar incubator customer social proof graphical user interface technology supply chain. Non-disclosure agreement rockstar creative partner network launch party social proof paradigm shift long tail influencer. </p>
 							<p class="text">Monetization validation success. Seed round channels product management. Customer non-disclosure agreement strategy android growth hacking ramen buyer.</p>
 						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="focus" id="focus">
+		<div class="container global-counter">
+			<div class="row global-counter__wrapper">
+				<div class="col-6 offset-3 focus__title">
+					<h2 class="title">Our Focus.</h2>
+					<p class="focus__description">We understand your requirement and provide quality works.</p>
+				</div>
+			</div>
+			<div class="row focus__list">
+				<div class="col-6 col-lg-3">
+					<div class="focus__item focus__item--red">
+						<i class="icon-web-design focus__icon"></i>
+						<p class="focus__item-title">Web Design</p>
+						<p class="text">Analytics release series A financing launch party interaction design android angel investor.</p>
+					</div>
+				</div>
+				<div class="col-6 col-lg-3">
+					<div class="focus__item focus__item--green">
+						<i class="icon-ux-design focus__icon"></i>
+						<p class="focus__item-title">UX Design</p>
+						<p class="text">Analytics release series A financing launch party interaction design android angel investor.</p>
+					</div>
+				</div>
+				<div class="col-6 col-lg-3">
+					<div class="focus__item focus__item--violet">
+						<i class="icon-photo focus__icon"></i>
+						<p class="focus__item-title">Photogrpahy</p>
+						<p class="text">Analytics release series A financing launch party interaction design android angel investor.</p>
+					</div>
+				</div>
+				<div class="col-6 col-lg-3">
+					<div class="focus__item focus__item--orange">
+						<i class="icon-app focus__icon"></i>
+						<p class="focus__item-title">App Development</p>
+						<p class="text">Analytics release series A financing launch party interaction design android angel investor.</p>
 					</div>
 				</div>
 			</div>
@@ -91,7 +131,7 @@
 <script>
 	$('a').click(function(){
 	    $('html, body').animate({
-	        scrollTop: $( $.attr(this, 'href') ).offset().top
+	        scrollTop: $($.attr(this, 'href')).offset().top
 	    }, 600);
 	    return false;
 	});

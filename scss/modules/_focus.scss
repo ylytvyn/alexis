@@ -1,0 +1,59 @@
+.focus {
+	background: #f7f7f7;
+	padding-bottom: 150px;
+	text-align: center;
+
+	.global-counter::before {
+		left: 50%;
+		top: 10px;
+		transform: translateX(-50%);
+	}
+
+	&__title {
+		padding-top: 130px;
+	}
+
+	&__description {
+		color: $grey;
+		font-size: 18px;
+	}
+
+	&__list {
+		margin-top: 80px;
+	}
+
+	&__item {
+		background: #fff;
+		box-shadow: 0 0 20px 0 rgba(0, 0, 0, .05);
+		padding: 60px 12.5%;
+		border-bottom: 3px solid;
+		margin-bottom: 30px;
+
+		&--red {
+			color: $red;
+		}
+
+		&--green {
+			color: $green;
+		}
+
+		&--violet {
+			color: $violet;
+		}
+
+		&--orange {
+			color: $orange;
+		}
+
+		&-title {
+			@include font(20px, $fw: 500);
+			margin: 20px 0 30px;
+			color: $dark-grey;
+		}
+	}
+
+	&__icon {
+		font-size: 48px;
+
+	}
+}

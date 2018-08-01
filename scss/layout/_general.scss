@@ -84,3 +84,13 @@ body {
 		margin-bottom: 0;
 	}
 }
+
+.colored-border {
+	&::after {
+		@include size(100%, 3px);
+		@include pos($b: -3px, $l: 0);
+		content: '';
+		background: url('../images/border.jpg');
+		background-size: 100% 100%;
+	}
+}
