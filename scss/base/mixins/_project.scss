@@ -1,0 +1,17 @@
+@mixin colored-border ($property) {
+	&--red {
+		#{$property}: $red;
+	}
+
+	&--green {
+		#{$property}: $green;
+	}
+
+	&--violet {
+		#{$property}: $violet;
+	}
+
+	&--orange {
+		#{$property}: $orange;
+	}
+}

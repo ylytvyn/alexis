@@ -63,6 +63,12 @@ body {
 		z-index: 0;
 	}
 
+	&--centered::before {
+		left: 50%;
+		top: 10px;
+		transform: translateX(-50%);
+	}
+
 	&__wrapper {
 		position: relative;
 		z-index: 1;

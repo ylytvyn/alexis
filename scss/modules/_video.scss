@@ -1,0 +1,30 @@
+.video {
+	padding: 135px 0 145px;
+	position: relative;
+
+	iframe {
+		@include pos($l: 0, $t: 0);
+		@include size(100%);
+	}
+
+	&::before {
+		@include pos($l: 0, $t: 0, $z: 1);
+		@include size(100%);
+		content: '';
+		background: rgba(63, 64, 73, .9);
+		pointer-events: none;
+	}
+
+	&__wrapper {
+		position: relative;
+		z-index: 2;
+		pointer-events: none;
+		text-align: center;
+		color: #fff;
+	}
+
+	&__title {
+		font-size: 30px;
+		margin-bottom: 150px;
+	}
+}

@@ -3,12 +3,6 @@
 	padding-bottom: 150px;
 	text-align: center;
 
-	.global-counter::before {
-		left: 50%;
-		top: 10px;
-		transform: translateX(-50%);
-	}
-
 	&__title {
 		padding-top: 130px;
 	}
@@ -29,21 +23,7 @@
 		border-bottom: 3px solid;
 		margin-bottom: 30px;
 
-		&--red {
-			color: $red;
-		}
-
-		&--green {
-			color: $green;
-		}
-
-		&--violet {
-			color: $violet;
-		}
-
-		&--orange {
-			color: $orange;
-		}
+		@include colored-border(color);
 
 		&-title {
 			@include font(20px, $fw: 500);
@@ -54,6 +34,5 @@
 
 	&__icon {
 		font-size: 48px;
-
 	}
 }

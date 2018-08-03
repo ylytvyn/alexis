@@ -1,0 +1,49 @@
+.steps {
+	text-align: center;
+	padding: 0 0 150px;
+
+	.title {
+		padding-top: 150px;
+	}
+
+	&__description {
+		font-size: 18px;
+	}
+
+	&__container {
+		padding-top: 125px;
+		counter-reset: steps;
+	}
+
+	&__block {
+		position: relative;
+	}
+
+	&__info {
+		@include pos($t: -55px, $z: 1);
+		text-align: left;
+		padding: 65px 55px 50px 125px;
+		border-bottom: 3px solid transparent;
+		background: #fff;
+		color: #272727;
+
+		@include colored-border(border-bottom-color);
+	}
+
+	&__title {
+
+	}
+
+	&__counter {
+		&::before {
+			counter-increment: steps;
+			content: counter(steps, decimal-leading-zero);
+		}
+	}
+
+	&__img {
+		&-block {
+
+		}
+	}
+}

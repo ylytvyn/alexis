@@ -31,7 +31,7 @@
 							<li class="menu__item"><a href="#focus" class="menu__link">Our Focus</a></li>
 							<li class="menu__item"><a href="#" class="menu__link">Portfolio</a></li>
 							<li class="menu__item"><a href="#" class="menu__link">Our Team</a></li>
-							<li class="menu__item"><a href="#" class="menu__link">Work Steps</a></li>
+							<li class="menu__item"><a href="#work-steps" class="menu__link">Work Steps</a></li>
 							<li class="menu__item"><a href="#" class="menu__link">Pricing</a></li>
 							<li class="menu__item"><a href="#" class="menu__link">Testimonials</a></li>
 							<li class="menu__item"><a href="#" class="menu__link">Blog</a></li>
@@ -85,7 +85,7 @@
 		</div>
 	</section>
 	<section class="focus" id="focus">
-		<div class="container global-counter">
+		<div class="container global-counter global-counter--centered">
 			<div class="row global-counter__wrapper">
 				<div class="col-6 offset-3 focus__title">
 					<h2 class="title">Our Focus.</h2>
@@ -124,6 +124,62 @@
 			</div>
 		</div>
 	</section>
+	<section class="video">
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/R2S2kMYYHZY?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+		<div class="container video__wrapper">
+			<p class="video__title">Explore Our Awesomeness</p>
+			<p class="video__text">Click to play the video</p>
+		</div>
+	</section>
+	<section class="steps" id="work-steps">
+		<div class="container global-counter global-counter--centered">
+			<div class="row global-counter__wrapper">
+				<div class="col-6 offset-3">
+					<h2 class="title">Work Steps.</h2>
+					<p class="steps__description">We understand your requirement and provide quality works.</p>
+				</div>
+			</div>
+			<div class="steps__container">
+				<div class="row steps__block">
+					<div class="col-5 steps__info steps__info--red">
+						<p class="steps__title steps__counter">Project Understanding</p>
+						<p class="text">Buyer strategy incubator niche market startup. Entrepreneur non disclosure agreement MVP traction beta social media investor accelerator.</p>
+					</div>
+					<div class="col-6 offset-3 steps__img-block">
+						<img class="steps__img" src="http://via.placeholder.com/556x300/c8afab/928785">
+					</div>
+				</div>
+				<div class="row steps__block">
+					<div class="col-5 steps__info steps__info--green">
+						<p class="steps__title steps__counter">Research & Planning</p>
+						<p class="text">Buyer strategy incubator niche market startup. Entrepreneur non disclosure agreement MVP traction beta social media investor accelerator.</p>
+					</div>
+					<div class="col-6 offset-3 steps__img-block">
+
+					</div>
+				</div>
+				<div class="row steps__block">
+					<div class="col-5 steps__info steps__info--violet">
+						<p class="steps__title steps__counter">Wireframe & Design</p>
+						<p class="text">Buyer strategy incubator niche market startup. Entrepreneur non disclosure agreement MVP traction beta social media investor accelerator.</p>
+					</div>
+					<div class="col-6 offset-3 steps__img-block">
+						<img class="steps__img" src="http://via.placeholder.com/556x300/c8afab/928785">
+					</div>
+				</div>
+				<div class="row steps__block">
+					<div class="col-5 steps__info steps__info--orange">
+						<p class="steps__title steps__counter">Development</p>
+						<p class="text">Buyer strategy incubator niche market startup. Entrepreneur non disclosure agreement MVP traction beta social media investor accelerator.</p>
+					</div>
+					<div class="col-6 offset-3 steps__img-block">
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
 <!-- LiveReload Script -->
 <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
@@ -131,7 +187,7 @@
 <script>
 	$('a').click(function(){
 	    $('html, body').animate({
-	        scrollTop: $($.attr(this, 'href')).offset().top
+	        scrollTop: $($.attr(this, 'href')).offset().top - 72
 	    }, 600);
 	    return false;
 	});

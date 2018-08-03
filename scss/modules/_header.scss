@@ -1,13 +1,15 @@
 .header {
 	&__menu {
+		@include pos(fixed, $l: 0, $t: 0, $z: 9);
+		width: 100%;
 		background: #fff;
 		box-shadow: 0 0 24px 0 rgba(0, 0, 0, .25);
 		padding: 20px 0;
 	}
 
 	&__info {
-		padding: 150px 0 165px;
-		background: url(http://via.placeholder.com/1920x850/3f4049/373841) no-repeat top center;
+		padding: 225px 0 165px;
+		background: #3f4049 url(http://via.placeholder.com/1920x850/3f4049/373841) no-repeat top center;
 		text-align: center;
 	}
 
@@ -25,17 +27,7 @@
 
 	&__advantage {
 		&-item {
-			&--green {
-				color: $green;
-			}
-
-			&--violet {
-				color: $violet;
-			}
-
-			&--orange {
-				color: $orange;
-			}
+			@include colored-border(color);
 		}
 
 		&-icon {
