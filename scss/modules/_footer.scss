@@ -1,0 +1,46 @@
+.footer {
+	text-align: left;
+	background: #3f4049;
+	padding: 60px 0;
+	color: #fff;
+	position: relative;
+
+	&::after {
+		@include pos($l: 0, $b: -3px);
+		@include size(100%, 3px);
+		content: '';
+		background: url('../images/border.jpg') no-repeat;
+		background-size: 100% 100%;
+	}
+
+	&__logo {
+		display: flex;
+	    justify-content: center;
+	    align-items: center;
+	}
+
+	&__title {
+		@include font(18px, 600);
+		margin-bottom: 35px;
+
+		@include colored-border(color);
+	}
+
+	&__social {
+		display: flex;
+		justify-content: space-between;
+		padding-right: 25%;
+
+		&-icon {
+			font-size: 30px;
+			color: #fff;
+			text-decoration: none;
+
+			&:hover {
+				color: $orange;
+			}
+		}
+	}
+
+
+}

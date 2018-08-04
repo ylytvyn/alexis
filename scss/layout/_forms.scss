@@ -1,0 +1,53 @@
+.button {
+	font: 600 16px $font-main;
+	padding: 15px 40px;
+	border-radius: 25px;
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+	display: inline-block;
+	background: $red;
+	cursor: pointer;
+
+	&:hover {
+		background: darken($red, 10%);
+	}
+}
+
+.field {
+	font: 16px/50px $font-main;
+	color: $grey;
+	text-align: center;
+	border-radius: 5px;
+	background: #fff;
+	padding: 0 25px;
+	width: 100%;
+	border-bottom: 2px solid transparent;
+
+	&:focus {
+		border-bottom-color: $violet;
+	}
+
+	&::-webkit-inner-spin-button,
+	&::-webkit-outer-spin-button {
+	  -webkit-appearance: none;
+	  margin: 0;
+	}
+
+	&-wrapper {
+		margin-bottom: 25px;
+	}
+}
+
+.textarea {
+	@extend .field;
+	resize: vertical;
+	min-height: 200px;
+	transition: none;
+	line-height: 25px;
+	padding-top: 10px;
+
+	&-wrapper {
+		margin-bottom: 50px;
+	}
+}

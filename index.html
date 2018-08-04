@@ -35,7 +35,7 @@
 							<li class="menu__item"><a href="#" class="menu__link">Pricing</a></li>
 							<li class="menu__item"><a href="#" class="menu__link">Testimonials</a></li>
 							<li class="menu__item"><a href="#" class="menu__link">Blog</a></li>
-							<li class="menu__item"><a href="#" class="menu__link">Contact</a></li>
+							<li class="menu__item"><a href="#contact" class="menu__link">Contact</a></li>
 						</ul>
 					</div>
 				</div>
@@ -272,17 +272,99 @@
 			</div>
 		</div>
 	</section>
+	<section class="subscribe">
+		<div class="container">
+			<h2 class="subscribe__title">Subscribe to Newsletter</h2>
+			<form action="#" class="subscribe__form">
+				<input type="email" name="email" placeholder="Enter your email" class="subscribe__field">
+				<button type="submit" class="subscribe__button">Subscribe now</button>
+			</form>
+		</div>
+	</section>
+	<section class="contact section-centered" id="contact">
+		<div class="container global-counter global-counter--centered">
+			<div class="row global-counter__wrapper">
+				<div class="col-6 offset-3">
+					<h2 class="title">Get in Touch.</h2>
+					<p class="description">We understand your requirement and provide quality works.</p>
+				</div>
+			</div>
+			<div class="row">
+				<form action="#" class="col-8 offset-2 contact__form">
+					<div class="row">
+						<div class="col-6 field-wrapper">
+							<input type="text" name="name" placeholder="Your Name" class="field">
+						</div>
+						<div class="col-6 field-wrapper">
+							<input type="email" name="email" placeholder="Your Email" class="field">
+						</div>
+						<div class="col-6 field-wrapper">
+							<input type="text" name="subject" placeholder="Subject" class="field">
+						</div>
+						<div class="col-6 field-wrapper">
+							<input type="number" name="budget" min="0" onkeypress="return event.charCode >= 48" placeholder="Project Budget" class="field">
+						</div>
+						<div class="col-12 textarea-wrapper">
+							<textarea name="msg" placeholder="Your Message" class="textarea"></textarea>
+						</div>
+					</div>
+					<button type="submit" class="button">Send Message</button>
+				</form>
+			</div>
 
-<!-- LiveReload Script -->
-<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
-<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-<script>
-	$('a').click(function(){
-	    $('html, body').animate({
-	        scrollTop: $($.attr(this, 'href')).offset().top - 72
-	    }, 600);
-	    return false;
-	});
-</script>
+			<div class="row footer">
+				<div class="col-3 footer__logo">
+					<a href="#main">
+						<img src="images/logo-white.png" alt="logo">
+					</a>
+				</div>
+				<div class="col-3 footer__info">
+					<h3 class="footer__title footer__title--green">Alexis LLC.</h3>
+					<p class="footer__text">
+						4125 Brighton Circle Road
+						<br>
+						Little Falls, MN 56345
+					</p>
+				</div>
+				<div class="col-3 footer__info">
+					<h3 class="footer__title footer__title--violet">Alexis LLC UK.</h3>
+					<p class="footer__text">
+						81 Golden Knowes Road
+						<br>
+						FRESHFIELD   L37 6TP
+					</p>
+				</div>
+				<div class="col-3 footer__info">
+					<h3 class="footer__title footer__title--orange">Follow Us.</h3>
+					<ul class="footer__social">
+						<li class="footer__social-item">
+							<a href="#" class="icon-fb-2 footer__social-icon"></a>
+						</li>
+						<li class="footer__social-item">
+							<a href="#" class="icon-tw-2 footer__social-icon"></a>
+						</li>
+						<li class="footer__social-item">
+							<a href="#" class="icon-in footer__social-icon"></a>
+						</li>
+						<li class="footer__social-item">
+							<a href="#" class="icon-google footer__social-icon"></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- LiveReload Script -->
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script>
+		$('a').click(function(){
+		    $('html, body').animate({
+		        scrollTop: $($.attr(this, 'href')).offset().top - 72
+		    }, 600);
+		    return false;
+		});
+	</script>
 </body>
 </html>

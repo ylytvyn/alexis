@@ -36,21 +36,6 @@ body {
 	color: $grey;
 }
 
-.button {
-	@include font(16px, $fw: 600);
-	padding: 15px 40px;
-	border-radius: 25px;
-	color: #fff;
-	text-transform: uppercase;
-	text-decoration: none;
-	display: inline-block;
-	background: $red;
-
-	&:hover {
-		background: darken($red, 10%);
-	}
-}
-
 .global-counter {
 	position: relative;
 

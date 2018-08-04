@@ -5,8 +5,9 @@
 
 // Layout
 @import "layout/_general";
-@import "layout/_typography";
 @import "layout/_icons";
+@import "layout/_typography";
+@import "layout/_forms";
 
 // Page styles
 @import "modules/_header";
@@ -16,3 +17,6 @@
 @import "modules/_steps";
 @import "modules/_feedback";
 @import "modules/_portfolio";
+@import "modules/_subscribe";
+@import "modules/_contacts";
+@import "modules/_footer";

@@ -33,12 +33,13 @@
 	}
 
 	&__numbers {
+		@include font(20px, 600);
 		margin: 20px 0 25px;
+		color: #fff;
 	}
 
 	&__title {
 		color: #fefefe;
 		opacity: .7;
-
 	}
 }
