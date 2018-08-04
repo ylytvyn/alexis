@@ -16,11 +16,19 @@
 	}
 
 	&__wrapper {
-		position: relative;
-		z-index: 2;
+		@include pos(relative, $z: 2);
 		pointer-events: none;
 		text-align: center;
 		color: #fff;
+
+		&::before {
+			@extend [class^="icon-"];
+			@include pos($l: 50%, $t: 50%);
+			transform: translateX(-50%) translateY(-40%);
+			font-size: 80px;
+			color: $green;
+		}
+		@extend .icon-play-btn;
 	}
 
 	&__title {

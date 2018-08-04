@@ -18,7 +18,7 @@
 
 	&__item {
 		background: #fff;
-		box-shadow: 0 0 20px 0 rgba(0, 0, 0, .05);
+		box-shadow: $shadow;
 		padding: 60px 12.5%;
 		border-bottom: 3px solid;
 		margin-bottom: 30px;
@@ -28,7 +28,7 @@
 		&-title {
 			@include font(20px, $fw: 500);
 			margin: 20px 0 30px;
-			color: $dark-grey;
+			color: $grey-dark;
 		}
 	}
 

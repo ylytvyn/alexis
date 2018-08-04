@@ -1,4 +1,4 @@
-@include font-face(icomoon, 'fonts/icomoon/icomoon', $ver: '?5nic3t');
+@include font-face(icomoon, 'fonts/icomoon/icomoon', $ver: '?c9rdey');
 
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
@@ -15,14 +15,65 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-check:before {
-  content: "\e900";
+.icon-play-btn:before {
+  content: "\e91a";
 }
-.icon-dollar:before {
-  content: "\e901";
+.icon-award:before {
+  content: "\e907";
 }
-.icon-time:before {
-  content: "\e902";
+.icon-calendar:before {
+  content: "\e908";
+}
+.icon-clients:before {
+  content: "\e909";
+}
+.icon-fb:before {
+  content: "\e90a";
+}
+.icon-fb-2:before {
+  content: "\e90b";
+}
+.icon-gift:before {
+  content: "\e90c";
+}
+.icon-google:before {
+  content: "\e90d";
+}
+.icon-graphic:before {
+  content: "\e90e";
+}
+.icon-grow:before {
+  content: "\e90f";
+}
+.icon-heart:before {
+  content: "\e910";
+}
+.icon-in:before {
+  content: "\e911";
+}
+.icon-li:before {
+  content: "\e912";
+}
+.icon-perfection:before {
+  content: "\e913";
+}
+.icon-plus:before {
+  content: "\e914";
+}
+.icon-revision:before {
+  content: "\e915";
+}
+.icon-share:before {
+  content: "\e916";
+}
+.icon-smart:before {
+  content: "\e917";
+}
+.icon-tw:before {
+  content: "\e918";
+}
+.icon-tw-2:before {
+  content: "\e919";
 }
 .icon-app:before {
   content: "\e903";
@@ -35,4 +86,13 @@
 }
 .icon-web-design:before {
   content: "\e906";
+}
+.icon-check:before {
+  content: "\e900";
+}
+.icon-dollar:before {
+  content: "\e901";
+}
+.icon-time:before {
+  content: "\e902";
 }

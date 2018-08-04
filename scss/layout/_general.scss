@@ -46,7 +46,7 @@ body {
 	background: $red;
 
 	&:hover {
-		background: #ff4729;
+		background: darken($red, 10%);
 	}
 }
 
@@ -77,7 +77,7 @@ body {
 
 .title {
 	font: 700 50px $font-title;
-	color: $dark-grey;
+	color: $grey-dark;
 	margin-bottom: 35px;
 }
 

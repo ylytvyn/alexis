@@ -1,11 +1,21 @@
 $font-main: Poppins, sans-serif;
 $font-title: 'Libre Baskerville', serif;
-$screen-lg: 1170px;
+
+$shadow: 0 0 20px 0 rgba(0, 0, 0, .05);
 
 // Colors
 $red: #fc5f45;
+$red-light: lighten(desaturate($red, 55), 12);
+
 $green: #38c695;
+$green-light: lighten(desaturate($green, 29), 22);
+
 $violet: #b27cf5;
+$violet-light: lighten(desaturate(adjust-hue($violet, 1), 55), 5);
+
 $orange: #feb960;
+$orange-light: lighten(desaturate(adjust-hue($orange, 1), 62), 8);
+
 $grey: #616161;
-$dark-grey: #313131;
+$grey-light: #ccc;
+$grey-dark: #313131;

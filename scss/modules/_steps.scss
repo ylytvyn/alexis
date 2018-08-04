@@ -13,37 +13,79 @@
 	&__container {
 		padding-top: 125px;
 		counter-reset: steps;
+		position: relative;
 	}
 
 	&__block {
 		position: relative;
+
+		&:nth-child(n) .steps__img-block {
+			@include gradientTB($grey-light, $red-light);
+		}
+
+		&:nth-child(2n) .steps__img-block {
+			@include gradientTB($grey-light, $green-light);
+		}
+
+		&:nth-child(3n) .steps__img-block {
+			@include gradientTB($grey-light, $violet-light);
+		}
+
+		&:nth-child(4n) .steps__img-block {
+			@include gradientTB($grey-light, $orange-light);
+		}
+
+		&:nth-child(odd) .steps__info {
+			left: 0;
+		}
+
+		&:nth-child(even) .steps__info {
+			right: 0;
+		}
 	}
 
 	&__info {
 		@include pos($t: -55px, $z: 1);
 		text-align: left;
-		padding: 65px 55px 50px 125px;
+		padding: 65px 4% 50px 10% !important;
 		border-bottom: 3px solid transparent;
 		background: #fff;
-		color: #272727;
+		color: darken($grey-dark, 4%);
+		box-shadow: $shadow;
 
 		@include colored-border(border-bottom-color);
 	}
 
 	&__title {
-
+		font-size: 25px;
+		margin-bottom: 20px;
 	}
 
 	&__counter {
 		&::before {
+			@include pos($l: 5%, $t: 9%);
 			counter-increment: steps;
 			content: counter(steps, decimal-leading-zero);
+			font: 700 50px $font-title;
+			color: #e0e0e0;
+		}
+
+		&::after {
+			@include pos($l: 17%, $t: 7%);
+			@include size(1px, 100px);
+			content: '';
+			background: #e0e0e0;
+			transform: rotate(45deg);
 		}
 	}
 
 	&__img {
-		&-block {
+		@include size(100%);
+		display: block;
 
+		&-block {
+			min-height: 300px;
+			width: 100%;
 		}
 	}
 }
