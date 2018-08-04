@@ -1,0 +1,62 @@
+.portfolio {
+	&__list {
+		margin-top: 80px;
+	}
+
+	&__item {
+		margin-bottom: 30px;
+	}
+
+	&__link {
+		color: $grey-dark;
+		text-decoration: none;
+		display: block;
+		position: relative;
+		overflow: hidden;
+		box-shadow: $shadow;
+
+		&::after, &::before {
+			transition: all .3s;
+			opacity: 0;
+			color: #fff;
+		}
+
+		&::before {
+			@extend [class^="icon-"];
+			@include pos($l: 50%, $t: 40%, $z: 1);
+			transform: translateX(-50%) translateY(-50%);
+			font-size: 60px;
+		}
+		@extend .icon-plus;
+
+		&::after {
+			@include pos($l: 0, $t: 0);
+			@include size(100%);
+			content: '';
+			background: rgba(2, 2, 2, .35);
+			border: 5px solid;
+		}
+
+		&:hover {
+			.portfolio__title {
+				bottom: 0;
+			}
+
+			&::after, &::before {
+				opacity: 1;
+			}
+		}
+	}
+
+	&__img {
+		display: block;
+	}
+
+	&__title {
+		@include font(18px, 500, 70px);
+		@include pos($b: -70px, $l: 5px, $z: 2);
+		width: calc(100% - 10px);
+		background: #fff url('../images/border.jpg') no-repeat top center;
+		background-size: 100% 3px;
+	}
+}

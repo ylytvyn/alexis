@@ -33,6 +33,7 @@ body, html {
 body {
 	font: 15px $font-main;
 	counter-reset: numbers;
+	color: $grey;
 }
 
 .button {
@@ -75,22 +76,6 @@ body {
 	}
 }
 
-.title {
-	font: 700 50px $font-title;
-	color: $grey-dark;
-	margin-bottom: 35px;
-}
-
-.text {
-	color: $grey;
-	line-height: 27px;
-	margin-bottom: 30px;
-
-	&:last-child {
-		margin-bottom: 0;
-	}
-}
-
 .colored-border {
 	&::after {
 		@include size(100%, 3px);
@@ -98,5 +83,14 @@ body {
 		content: '';
 		background: url('../images/border.jpg');
 		background-size: 100% 100%;
+	}
+}
+
+.section-centered {
+	padding-bottom: 150px;
+	text-align: center;
+
+	.title {
+		padding-top: 130px;
 	}
 }

@@ -1,0 +1,19 @@
+.title {
+	font: 700 50px $font-title;
+	color: $grey-dark;
+	margin-bottom: 35px;
+}
+
+.description {
+	font-size: 18px;
+}
+
+.text {
+	color: $grey;
+	line-height: 27px;
+	margin-bottom: 30px;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}

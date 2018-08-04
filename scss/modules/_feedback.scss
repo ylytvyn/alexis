@@ -1,0 +1,44 @@
+.feedback {
+	background: url('../images/bg/coffee.jpg') no-repeat top center;
+	background-size: cover;
+	padding: 145px 0 125px;
+
+	&__item {
+		@include colored-border(color);
+		text-align: center;
+		padding-bottom: 50px;
+		position: relative;
+
+		&::before {
+			@include size(15px);
+			@include pos($l: 50%, $b: 0);
+			transform: translateX(-50%);
+			border: 2px solid;
+			content: '';
+			border-radius: 50%;
+		}
+
+		&::after {
+			@include size(7px);
+			@include pos($l: 50%, $b: 4px);
+			transform: translateX(-50%);
+			content: '';
+			border-radius: 50%;
+			background: currentColor;
+		}
+	}
+
+	&__icon {
+		font-size: 50px;
+	}
+
+	&__numbers {
+		margin: 20px 0 25px;
+	}
+
+	&__title {
+		color: #fefefe;
+		opacity: .7;
+
+	}
+}
