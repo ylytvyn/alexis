@@ -8,12 +8,59 @@
     {
       "selection": [
         {
+          "order": 1,
+          "id": 0,
+          "name": "menu",
+          "prevSize": 20,
+          "code": 59675,
+          "tempChar": ""
+        }
+      ],
+      "id": 1,
+      "metadata": {
+        "name": "Zondicons (subset)",
+        "importSize": {
+          "width": 20,
+          "height": 20
+        },
+        "url": "http://www.zondicons.com/",
+        "designer": "Steve Schoger",
+        "designerURL": "http://www.steveschoger.com/",
+        "license": "CC BY 4.0",
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "iconsHash": 845300721
+      },
+      "height": 1024,
+      "prevSize": 20,
+      "icons": [
+        {
+          "id": 0,
+          "paths": [
+            "M0 153.6h1024v102.4h-1024v-102.4zM0 460.8h1024v102.4h-1024v-102.4zM0 768h1024v102.4h-1024v-102.4z"
+          ],
+          "attrs": [
+            {}
+          ],
+          "isMulticolor": false,
+          "isMulticolor2": false,
+          "tags": [
+            "menu"
+          ],
+          "grid": 20
+        }
+      ],
+      "invisible": false,
+      "colorThemes": []
+    },
+    {
+      "selection": [
+        {
           "order": 56,
           "id": 27,
           "name": "play-btn",
           "prevSize": 32,
           "code": 59674,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "order": 29,
@@ -21,7 +68,7 @@
           "name": "award",
           "prevSize": 32,
           "code": 59655,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "order": 30,
@@ -29,7 +76,7 @@
           "name": "calendar",
           "prevSize": 32,
           "code": 59656,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "order": 31,
@@ -37,7 +84,7 @@
           "name": "clients",
           "prevSize": 32,
           "code": 59657,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "order": 32,
@@ -45,7 +92,7 @@
           "name": "fb",
           "prevSize": 32,
           "code": 59658,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "order": 33,
@@ -53,7 +100,7 @@
           "name": "fb-2",
           "prevSize": 32,
           "code": 59659,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "order": 34,
@@ -61,7 +108,7 @@
           "name": "gift",
           "prevSize": 32,
           "code": 59660,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "order": 35,
@@ -69,7 +116,7 @@
           "name": "google",
           "prevSize": 32,
           "code": 59661,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "order": 36,
@@ -77,7 +124,7 @@
           "name": "graphic",
           "prevSize": 32,
           "code": 59662,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "order": 37,
@@ -85,7 +132,7 @@
           "name": "grow",
           "prevSize": 32,
           "code": 59663,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "order": 38,
@@ -93,7 +140,7 @@
           "name": "heart",
           "prevSize": 32,
           "code": 59664,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "order": 39,
@@ -101,7 +148,7 @@
           "name": "in",
           "prevSize": 32,
           "code": 59665,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "order": 40,
@@ -109,7 +156,7 @@
           "name": "li",
           "prevSize": 32,
           "code": 59666,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "order": 41,
@@ -117,7 +164,7 @@
           "name": "perfection",
           "prevSize": 32,
           "code": 59667,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "order": 42,
@@ -125,7 +172,7 @@
           "name": "plus",
           "prevSize": 32,
           "code": 59668,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "order": 43,
@@ -133,7 +180,7 @@
           "name": "revision",
           "prevSize": 32,
           "code": 59669,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "order": 44,
@@ -141,7 +188,7 @@
           "name": "share",
           "prevSize": 32,
           "code": 59670,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "order": 45,
@@ -149,7 +196,7 @@
           "name": "smart",
           "prevSize": 32,
           "code": 59671,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "order": 46,
@@ -157,7 +204,7 @@
           "name": "tw",
           "prevSize": 32,
           "code": 59672,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "order": 47,
@@ -165,7 +212,7 @@
           "name": "tw-2",
           "prevSize": 32,
           "code": 59673,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "order": 48,
@@ -173,7 +220,7 @@
           "name": "app",
           "prevSize": 32,
           "code": 59651,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "order": 49,
@@ -181,7 +228,7 @@
           "name": "photo",
           "prevSize": 32,
           "code": 59652,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "order": 50,
@@ -189,7 +236,7 @@
           "name": "ux-design",
           "prevSize": 32,
           "code": 59653,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "order": 51,
@@ -197,7 +244,7 @@
           "name": "web-design",
           "prevSize": 32,
           "code": 59654,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "order": 52,
@@ -205,7 +252,7 @@
           "name": "check",
           "prevSize": 32,
           "code": 59648,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "order": 53,
@@ -213,7 +260,7 @@
           "name": "dollar",
           "prevSize": 32,
           "code": 59649,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "order": 54,
@@ -221,7 +268,7 @@
           "name": "time",
           "prevSize": 32,
           "code": 59650,
-          "tempChar": ""
+          "tempChar": ""
         }
       ],
       "id": 0,

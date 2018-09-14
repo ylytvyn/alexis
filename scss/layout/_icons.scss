@@ -1,4 +1,4 @@
-@include font-face(icomoon, 'fonts/icomoon/icomoon', $ver: '?c9rdey');
+@include font-face(icomoon, 'fonts/icomoon/icomoon', $ver: '?gispf7');
 
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
@@ -96,3 +96,6 @@
 .icon-time:before {
   content: "\e902";
 }
+/*.icon-menu:before {
+  content: "\e91b";
+}*/

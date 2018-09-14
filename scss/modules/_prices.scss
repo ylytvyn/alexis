@@ -1,6 +1,13 @@
 .prices {
 	&__wrapper {
 		margin-top: 75px;
+
+		@media (max-width: 768px) {
+			> div {
+				margin-bottom: 30px;
+			}
+		}
+
 	}
 
 	&__item {
@@ -9,6 +16,11 @@
 		border-top: 3px solid;
 		box-shadow: $shadow;
 		padding: 30px 30px 40px;
+
+		@media (max-width: 768px) {
+			width: 70%;
+			margin: 0 auto;
+		}
 
 		&:hover {
 			transform: scale(1.1);

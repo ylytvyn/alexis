@@ -18,6 +18,10 @@
 		font: 60px/85px $font-title;
 		color: #fff;
 		padding: 0 15% 40px;
+
+		@media (max-width: 768px) {
+			padding: 0 10% 40px;
+		}
 	}
 
 	&__advantages {
@@ -39,28 +43,6 @@
 			@include font(18px, $fw: 500);
 			text-transform: uppercase;
 			margin-top: 35px;
-		}
-	}
-}
-
-.menu {
-	display: flex;
-	justify-content: flex-end;
-	flex-wrap: nowrap;
-
-	&__item {
-		padding: 0 10px;
-		line-height: 30px;
-	}
-
-	&__link {
-		@include font(14px, $fw: 500);
-		color: darken($grey-dark, 4%);
-		text-decoration: none;
-
-		&--active,
-		&:hover {
-			color: $red;
 		}
 	}
 }
