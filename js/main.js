@@ -2,12 +2,6 @@
 
 (function($){
 	$(document).ready(function() {
-		// add styles async
-		$('head').append(
-			'<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700|Poppins:400,500,600" rel="stylesheet">' +
-			'<link rel="stylesheet" href="css/bootstrap-grid.min.css">' +
-			'<link rel="stylesheet" href="css/styles.min.css">');
-
 		// Link anchor
 		$('a').click(function(){
 		    $('html, body').animate({
